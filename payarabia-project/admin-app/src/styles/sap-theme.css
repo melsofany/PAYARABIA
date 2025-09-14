@@ -1,0 +1,337 @@
+/* SAP Fiori Theme Customizations for RTL Support */
+
+/* RTL Direction Support */
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Custom Color Variables */
+:root {
+  --sapBrandColor: #1976D2;
+  --sapHighlightColor: #1565C0;
+  --sapBaseColor: #FFFFFF;
+  --sapShellColor: #F5F5F5;
+  --sapBackgroundColor: #F5F5F5;
+  --sapTextColor: #212121;
+  --sapLinkColor: #1976D2;
+  --sapLinkHoverColor: #1565C0;
+  --sapLinkActiveColor: #0D47A1;
+  --sapLinkVisitedColor: #1976D2;
+  --sapNegativeColor: #F44336;
+  --sapCriticalColor: #FF9800;
+  --sapPositiveColor: #4CAF50;
+  --sapInformativeColor: #2196F3;
+  --sapNeutralColor: #757575;
+}
+
+/* RTL Table Support */
+ui5-table {
+  direction: rtl;
+}
+
+ui5-table-column {
+  text-align: right;
+}
+
+/* RTL Input Support */
+ui5-input {
+  direction: rtl;
+  text-align: right;
+}
+
+ui5-textarea {
+  direction: rtl;
+  text-align: right;
+}
+
+/* RTL Select Support */
+ui5-select {
+  direction: rtl;
+}
+
+ui5-option {
+  text-align: right;
+}
+
+/* RTL Button Support */
+ui5-button {
+  direction: rtl;
+}
+
+/* RTL Card Support */
+ui5-card {
+  direction: rtl;
+}
+
+/* RTL List Support */
+ui5-list {
+  direction: rtl;
+}
+
+ui5-li {
+  text-align: right;
+}
+
+/* RTL Message Strip Support */
+ui5-message-strip {
+  direction: rtl;
+  text-align: right;
+}
+
+/* RTL Dialog Support */
+ui5-dialog {
+  direction: rtl;
+}
+
+/* RTL Popover Support */
+ui5-popover {
+  direction: rtl;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Custom Grid Layout */
+.grid-container {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Custom Flex Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+/* Custom Spacing */
+.m-0 { margin: 0; }
+.m-1 { margin: 8px; }
+.m-2 { margin: 16px; }
+.m-3 { margin: 24px; }
+.m-4 { margin: 32px; }
+
+.p-0 { padding: 0; }
+.p-1 { padding: 8px; }
+.p-2 { padding: 16px; }
+.p-3 { padding: 24px; }
+.p-4 { padding: 32px; }
+
+.mb-1 { margin-bottom: 8px; }
+.mb-2 { margin-bottom: 16px; }
+.mb-3 { margin-bottom: 24px; }
+.mb-4 { margin-bottom: 32px; }
+
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.mt-3 { margin-top: 24px; }
+.mt-4 { margin-top: 32px; }
+
+.pb-1 { padding-bottom: 8px; }
+.pb-2 { padding-bottom: 16px; }
+.pb-3 { padding-bottom: 24px; }
+.pb-4 { padding-bottom: 32px; }
+
+.pt-1 { padding-top: 8px; }
+.pt-2 { padding-top: 16px; }
+.pt-3 { padding-top: 24px; }
+.pt-4 { padding-top: 32px; }
+
+/* Custom Text Utilities */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.text-primary { color: var(--sapBrandColor); }
+.text-secondary { color: var(--sapNeutralColor); }
+.text-success { color: var(--sapPositiveColor); }
+.text-warning { color: var(--sapCriticalColor); }
+.text-danger { color: var(--sapNegativeColor); }
+.text-info { color: var(--sapInformativeColor); }
+
+.text-bold { font-weight: bold; }
+.text-normal { font-weight: normal; }
+.text-light { font-weight: 300; }
+
+/* Custom Background Utilities */
+.bg-primary { background-color: var(--sapBrandColor); }
+.bg-secondary { background-color: var(--sapNeutralColor); }
+.bg-success { background-color: var(--sapPositiveColor); }
+.bg-warning { background-color: var(--sapCriticalColor); }
+.bg-danger { background-color: var(--sapNegativeColor); }
+.bg-info { background-color: var(--sapInformativeColor); }
+.bg-light { background-color: var(--sapShellColor); }
+.bg-white { background-color: var(--sapBaseColor); }
+
+/* Custom Border Utilities */
+.border { border: 1px solid #e0e0e0; }
+.border-top { border-top: 1px solid #e0e0e0; }
+.border-bottom { border-bottom: 1px solid #e0e0e0; }
+.border-left { border-left: 1px solid #e0e0e0; }
+.border-right { border-right: 1px solid #e0e0e0; }
+
+.border-primary { border-color: var(--sapBrandColor); }
+.border-secondary { border-color: var(--sapNeutralColor); }
+.border-success { border-color: var(--sapPositiveColor); }
+.border-warning { border-color: var(--sapCriticalColor); }
+.border-danger { border-color: var(--sapNegativeColor); }
+.border-info { border-color: var(--sapInformativeColor); }
+
+/* Custom Shadow Utilities */
+.shadow-sm { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+.shadow { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
+.shadow-lg { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+
+/* Custom Border Radius */
+.rounded { border-radius: 4px; }
+.rounded-sm { border-radius: 2px; }
+.rounded-lg { border-radius: 8px; }
+.rounded-xl { border-radius: 12px; }
+.rounded-full { border-radius: 50%; }
+
+/* Custom Width and Height */
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.w-auto { width: auto; }
+.h-auto { height: auto; }
+
+/* Custom Display */
+.d-none { display: none; }
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-flex { display: flex; }
+.d-grid { display: grid; }
+
+/* Custom Position */
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.position-fixed { position: fixed; }
+.position-sticky { position: sticky; }
+
+/* Custom Overflow */
+.overflow-hidden { overflow: hidden; }
+.overflow-auto { overflow: auto; }
+.overflow-scroll { overflow: scroll; }
+.overflow-visible { overflow: visible; }
+
+/* Custom Cursor */
+.cursor-pointer { cursor: pointer; }
+.cursor-default { cursor: default; }
+.cursor-not-allowed { cursor: not-allowed; }
+
+/* Custom Opacity */
+.opacity-0 { opacity: 0; }
+.opacity-25 { opacity: 0.25; }
+.opacity-50 { opacity: 0.5; }
+.opacity-75 { opacity: 0.75; }
+.opacity-100 { opacity: 1; }
+
+/* Custom Z-Index */
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-30 { z-index: 30; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .flex-row {
+    flex-direction: column;
+  }
+  
+  .text-center-mobile {
+    text-align: center;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+}

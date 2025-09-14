@@ -1,0 +1,52 @@
+{
+  "name": "payarabia-admin",
+  "version": "1.0.0",
+  "description": "تطبيق إدارة PAYARABIA",
+  "private": true,
+  "dependencies": {
+    "@ui5/webcomponents": "^1.15.0",
+    "@ui5/webcomponents-fiori": "^1.15.0",
+    "@ui5/webcomponents-react": "^1.15.0",
+    "@ui5/webcomponents-icons": "^1.15.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "5.0.1",
+    "axios": "^1.3.0",
+    "recharts": "^2.5.0",
+    "date-fns": "^2.29.0",
+    "react-hook-form": "^7.43.0",
+    "react-query": "^3.39.0",
+    "agora-rtc-sdk-ng": "^4.18.0",
+    "socket.io-client": "^4.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^4.9.0"
+  }
+}
